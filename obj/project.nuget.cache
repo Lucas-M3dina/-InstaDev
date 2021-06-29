@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "e7KDc0US04hHSGpzOnC4jJUCcFrKGJN0k+L9O2pnGAQ/teDUdpg9QF09Pu4eJWY7/ZEnqOnVNLLcGmNErf52tg==",
+  "dgSpecHash": "m/ARiqckpR5SY6EG5fkQULNiOk2xdlYQusntwEOLpl2UNrvAoXAQnzQ/6Exu4BA3J01fnx+1cHok/6Xn8VGYQQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dev\\Desktop\\Medina\\Senai_InstaDev\\Senai_InstaDev.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\luiza\\Desktop\\InstaDev\\InstaDev\\Senai_InstaDev.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\luiza\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\luiza\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\luiza\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\luiza\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.15\\microsoft.netcore.app.host.win-x64.3.1.15.nupkg.sha512"
+  ],
   "logs": []
 }
