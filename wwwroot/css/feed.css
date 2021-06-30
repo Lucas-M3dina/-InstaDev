@@ -1,0 +1,414 @@
+/* RESET CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: 0;
+
+}
+
+/* FIM DO RESET CSS */
+
+
+/* INICIO DO HEADER */
+
+header{
+    display: flex;
+    background-color: #fff;
+    border: #F1F1F1 solid 1px;
+    align-items: center;
+    width: 100%;
+}
+
+header .container_header{
+    display: flex;
+    width: 58%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2em 0;
+}
+
+header .container_header .logo{
+    padding: 0.6em 0;
+    max-width: 70px;
+}
+
+header .container_header .container_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+}
+
+header .container_header .container_nav form{
+    display: flex;
+}
+
+header .container_header .container_nav .pesquisar{
+    background: #FAFAFA;
+    border-top: #DCDCDC 1px solid;
+    border-left: #DCDCDC 1px solid;
+    border-bottom: #DCDCDC 1px solid;
+    border-radius: 2px 0 0 2px;
+    text-align: center;
+    font-family: "Segoe UI";
+    padding: 0.1em;
+    width: 112%;
+    font-size: 13px;
+    color: #AFAFAF;
+}
+
+header .container_header .container_nav form button {
+    background: #FAFAFA;
+    border-top: #DCDCDC 1px solid;
+    border-right: #DCDCDC 1px solid;
+    border-bottom: #DCDCDC 1px solid;
+    border-radius: 0 2px 2px 0;
+    padding: 2.5px;
+}
+
+header .container_header .container_nav form button i{
+    color: #AFAFAF;
+    font-size: 12.5px;
+}
+
+header .container_header .container_nav nav{
+    display: flex;
+    width: 48%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container_header .container_nav nav .lista_logos{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container_header .container_nav nav .lista_logos .logos_header{
+    font-size: 18px;
+}
+
+header .container_header .container_nav nav .lista_logos .usuario_foto{
+    border-radius: 50px;
+    max-width: 32px;
+    max-height: 32px;
+}
+
+/* FIM DO HEADER */
+
+
+
+/* INICIO FEED */
+
+main{
+    background-color: #E5E5E5;
+}
+
+.feed_main{
+    background-color: #E5E5E5;
+}
+
+.container_feed{
+    margin: 0 auto;
+    width: 58%;
+    min-width: 475px;
+}
+
+.posicionando_aside{
+    display: flex;
+    width: 57%;
+    margin: 0 auto;
+}
+
+/* SECTION PERFIS */
+
+.perfis{
+    background-color: #fff;
+    width: 64%;
+    display: flex;   
+    margin-top: 1em;
+    border: #F1F1F1 solid 1px;
+    min-width: 475px;
+}
+
+.container_perfis{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.6em;
+}
+
+.container_perfis_colunas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagem_story{
+    max-width: 2.9em;
+    border-radius: 300px;
+}
+
+.nome_usuario_story{
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+}
+
+/* FIM DA SECTION PERFIS */
+
+
+/* INICIO DA SECTION PARA POST */
+
+.feed_postar{
+    background-color: #fff;
+    width: 64%;
+    display: flex;   
+    margin-top: 2em;
+    border: #F1F1F1 solid 1px;
+    padding: 1em;
+    min-width: 475px;
+}
+
+.container_postar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.titulo_post{
+    display: flex;
+    align-items: center;
+    width: 21%;
+    justify-content: space-between;
+}
+
+.titulo_post img{
+    border-radius: 100px;
+    width: 35px;
+}
+
+.titulo_post p{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.postar_foto{
+    margin-top: 1.5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+#escolha_imagem{
+    display: none;
+}
+
+.descricao_post{
+    background: #FAFAFA;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    width: 45%;
+    padding: 0.3em;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+}
+
+.upload_imagem{
+    background-color: #D1D1D1;
+    border-radius: 5px; 
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #7D7D7D; 
+    padding: 0.4em 0.9em;
+    cursor: pointer;
+}
+
+.feed_btn_postar{
+    background-color: #2686CC;
+    border-radius: 5px;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    padding: 0.4em 2.9em;
+}
+
+
+/* FIM DA SECTION PARA POST */
+
+
+
+/* INICIO POST */
+
+.post{
+    background-color: #fff;
+    width: 64%;
+    display: flex;   
+    flex-direction: column;
+    margin-top: 2em;
+    border: #F1F1F1 solid 1px;
+    min-width: 475px;
+}
+
+.header_post{
+    display: flex;
+    width: 24%;
+    justify-content: space-between;
+    min-width: 105px;
+    padding: 0.4em;
+}
+
+.user_post{
+    max-width: 31px;
+    border-radius: 300px;
+    max-height: 33px;
+}
+
+.header_post_textos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nome_usuario{
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #000000;
+}
+
+.localizacao_usuario{
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    color: #000000;
+}
+
+.imagem_post{
+    width: 100%;
+    max-height: 265px;
+}
+
+.comentario{
+    display: flex;
+    flex-direction: column;
+    padding: 0.7em;
+}
+
+.interacao_post{
+    display: flex;
+    width: 43%;
+    justify-content: space-between;
+}
+
+.logos_comentario{
+    font-size: 18px;
+}
+
+.input_comentar{
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    color: #AFAFAF;
+    border-bottom: 1px solid #DCDCDC;
+    padding: 2px 0;
+}
+
+.curtidas{
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #000000;
+    margin-bottom: 0.5em;
+    margin-top: 3px;
+}
+
+.usuario_comentario{
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #000000;
+}
+
+.mensagem_comentario{
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #000000;
+}
+
+/* FIM DO POST */
+
+/* INICIO ASIDE */
+
+.aside_feed{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container_aside{
+    margin-top: 1em;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+}
+
+.imagem_usuario_aside{
+    border-radius: 100px;
+    max-width: 50px;
+}
+
+.textos_aside{
+    margin-left: 10px;
+}
+
+.usuario_aside{
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+}
+
+.nome_usuario_aside{
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #B6B6B6;
+}
+
+
+/* FIM ASIDE */
+
+
+/* FIM DO FEED */
