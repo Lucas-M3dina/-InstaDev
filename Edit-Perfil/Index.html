@@ -33,71 +33,77 @@
             </div>
         </div>
     </header>
+    <main>
 
-    <section class="principal">
-        <div class="edicao">
+        <section class="principal">
+            <div class="edicao">
 
-            <div class="titulo">
-                <h1 class="editar">Editar Perfil</h1>
-            </div>
-
-            <div class="informacao">
-                <div class="info_usuario">
-                    <img class="img_usuario" src="img/usuario_exemplo.png" alt="Foto do Perfil">
-                    <div class="info">
-                        <p>Usuario</p>
-                        <form action="index.html" method="POST" enctype="multipart/form-data">
-                            <div class="alterar">
-                                <label for="arquivo">Alterar foto do perfil</label>
-                                <input style="display:none;" type="file" name="arquivo" id="arquivo">
-                            </div>
-                        </form>
-                    </div>
+                <div class="titulo">
+                    <h1 class="editar">Editar Perfil</h1>
                 </div>
-                <div class="nome">
-                    <form action="#">
+
+                <div class="informacao">
+                    <div class="info_usuario">
+                        <img class="img_usuario" src="img/usuario_exemplo.png" alt="Foto do Perfil">
+                        <div class="info">
+                            <p>Usuario</p>
+                            <form action="index.html" method="POST" enctype="multipart/form-data">
+                                <div class="alterar">
+                                    <label for="arquivo">Alterar foto do perfil</label>
+                                    <input style="display:none;" type="file" name="arquivo" id="arquivo">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="nome">
+
                         <div class="text_input">
                             <label for="text_perfil">Nome</label>
-                            <input id="text_perfil" type="text"></input>
                         </div>
 
                         <div class="paragrafo">
-                            <p>Ajude as pessoas a descobrir sua conta usando o nome pelo qual você é conhecido: seu nome
+                            <input id="text_perfil" type="text"></input>
+                            <p>Ajude as pessoas a descobrir sua conta usando o nome pelo qual você é conhecido: seu
+                                nome
                                 completo, apelido ou nome comercial.</p>
                             <p>Você pode alterar o seu nome apenas duas vezes a cada 14 dias.</p>
                         </div>
-                    </form>
-                </div>
-                <div class="usuario">
-                    <form action="#">
+
+                    </div>
+                    <div class="usuario">
+
                         <div class="text_input_user">
                             <label for="text_perfil">Nome de usuário</label>
-                            <input id="text_user_name" type="text"></input>
                         </div>
                         <div class="paragrafo">
+                            <input id="text_user_name" type="text"></input>
 
-                            <p id="txt_username">Na maioria dos casos, você poderá alterar seu nome de usuário novamente
+                            <p id="txt_username">Na maioria dos casos, você poderá alterar seu nome de usuário
+                                novamente
                                 para nascimento_tr por mais 14 dias.</p>
-                            <p class="user_p">Informações pessoais<br /> Forneça suas informações pessoais, mesmo se a conta for usada
+                            <p class="user_p">Informações pessoais<br /> Forneça suas informações pessoais, mesmo se
+                                a conta for usada
                                 para
-                                uma empresa, um animal de estimação ou outra coisa. Elas não farão parte do seu perfil
+                                uma empresa, um animal de estimação ou outra coisa. Elas não farão parte do seu
+                                perfil
                                 público.</p>
                         </div>
-                    </form>
-                </div>
 
-                <div class="text_input_email">
-                    <form action="#">
-                        <label for="text_perfil_email">Email</label>
+                    </div>
+
+                    <div class="text_input_email">
+                        <div class="label_email">
+                            <label for="text_perfil_email">Email</label>
+                        </div>
                         <input id="text_perfil_email" type="text"></input>
-                    </form>
-                </div>
-                <div class="enviar">
-                    <button class="botao" type="submit">Enviar</button>
-                    <a class="desativar" href="#">Desativar minha conta definitivamente</a>
+                    </div>
+                    <div class="enviar">
+                        <button class="botao" type="submit">Enviar</button>
+                        <a class="desativar" href="#">Desativar minha conta definitivamente</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
 </body>
