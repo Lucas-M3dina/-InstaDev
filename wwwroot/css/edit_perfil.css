@@ -12,47 +12,7 @@
     min-width: 475px;
 }
 
-/* SECTION PERFIS */
 
-.perfis{
-    background-color: #fff;
-    width: 64%;
-    display: flex;   
-    margin-top: 1em;
-    border: #F1F1F1 solid 1px;
-    min-width: 475px;
-}
-
-.container_perfis{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    padding: 0.6em;
-}
-
-.container_perfis_colunas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.imagem_story{
-    max-width: 2.9em;
-    border-radius: 300px;
-}
-
-.nome_usuario_story{
-    font-family: "Segoe UI";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 9px;
-}
-
-/* FIM DA SECTION PERFIS */
-
-
-/* INICIO DA SECTION PARA POST */
 
 .principal{
     background-color: white;
@@ -260,9 +220,6 @@ font-style: normal;
 font-weight: 600;
 font-size: 12px;
 line-height: 16px;
-/* identical to box height */
-
-
 color: #FFFFFF;
 }
 

@@ -107,11 +107,11 @@ header .container_header .container_nav nav .lista_logos .usuario_foto{
 /* INICIO FEED */
 
 main{
-    background-color: #E5E5E5;
+    background-color: #FAFAFA;
 }
 
 .feed_main{
-    background-color: #E5E5E5;
+    background-color: #FAFAFA;
 }
 
 .container_feed{
@@ -412,3 +412,22 @@ main{
 
 
 /* FIM DO FEED */
+
+
+/* FOOTER */
+
+footer{
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    
+}
+
+footer span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #FAFAFA;
+    margin-top: 1em;
+}

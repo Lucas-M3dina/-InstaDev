@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,43 +7,21 @@
     <script src="https://kit.fontawesome.com/d9b9f84503.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="~/css/feed.css" />
     <link rel="stylesheet" href="~/css/edit_perfil.css">
+    <link rel="stylesheet" href="~/css/login.css">
+    <link rel="stylesheet" href="~/css/cadastro.css">
 </head>
 <body>
-    <header>
-        <div class="container_header">
-            <img class="logo" src="~/img/Instadev.png" alt="Logo">
-            <div class="container_nav">
-                <form>
-                    <input class="pesquisar" type="text" name="" placeholder="Pesquisar">
-                    <button type="submit"> <i class="fas fa-search"></i> </button>
-                </form>
-
-                <nav>
-                    <ul class="lista_logos">
-                        <li> <a> <i class="fas fa-home logos_header"></i> </li> </a>
-                        <li> <a> <i class="far fa-paper-plane logos_header"></i>  </li> </a>
-                        <li> <a> <i class="far fa-compass logos_header"></i> </li> </a>
-                        <li> <a> <i class="far fa-heart logos_header"></i> </li> </a>
-                        <li> <a> <img class="usuario_foto logos_header" src="~/img/usuario_exemplo.png" alt="Foto do Usuario"> </li> </a>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
     
-    <main role="main">
-        @RenderBody()
-    </main>
+    
+    
+     @RenderBody()
+    
     
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - InstaDev - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+    <footer>
+            <span>Copyright ₢ 2021 - Escola Senai de informática</span>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
