@@ -272,6 +272,15 @@ header .container_header .container_nav nav .lista_logos .usuario_foto{
     width: 85%;
     justify-content: space-between;
 }
+.text_input_user label{
+    
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+
+}
 .text_user_name label{
     
         font-family: Segoe UI;
@@ -290,12 +299,8 @@ header .container_header .container_nav nav .lista_logos .usuario_foto{
         height: 55%;
         padding: 2px;
 }
-.text_input_user{
-    display: flex;
-    padding-left: 4%;
-    width: 85%;
-    justify-content: space-between;
-}
+
+
 #txt_username{
 
     font-family: Segoe UI;
@@ -327,11 +332,27 @@ header .container_header .container_nav nav .lista_logos .usuario_foto{
         padding: 2px;
     
 }
+.text_perfil_email label{
+    
+    font-family: (Segoe UI);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+
+}
 
 .text_input_email{
     /* display: flex; */
     padding-left: 4%;
     width: 85%;
+    justify-content: space-between;
+}
+
+.text_input_email form{
+    display: flex;
+   
+    
     justify-content: space-between;
 }
 .text_perfil_email{
@@ -374,3 +395,6 @@ color: #FFFFFF;
 .botao:hover {
     cursor: pointer;
 }
+
+
+
