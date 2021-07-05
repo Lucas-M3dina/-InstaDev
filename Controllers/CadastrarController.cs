@@ -23,9 +23,9 @@ namespace InstaDev.Controllers
         public IActionResult Cadastrar(IFormCollection form){
             Usuario novoUsuario = new Usuario();
 
-            IdAleatorio = numeroRandom.Next();
             do
             {
+                IdAleatorio = numeroRandom.Next();
                 repetir = UsuarioModel.VerificandoId(IdAleatorio);
 
             } while(repetir == true);

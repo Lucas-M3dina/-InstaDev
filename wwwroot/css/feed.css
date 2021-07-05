@@ -116,8 +116,7 @@ main{
 
 .container_feed{
     margin: 0 auto;
-    width: 58%;
-    min-width: 475px;
+    width: 475px;
 }
 
 .posicionando_aside{
@@ -209,6 +208,7 @@ main{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1em;
+    flex-direction: row;
 }
 
 #escolha_imagem{

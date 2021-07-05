@@ -1,42 +1,43 @@
 @{
-    ViewData["Title"] = "Cadastrar Usuario";
+    ViewData["Title"] = "Cadastrar_Usuario";
 }
 
 
-    <main class=" cadastro_m container">
+<div class=" cadastro_m container">
 
-        <section class="login_tab2">
+    <section class="login_tab2">
 
-            <img class="Instaimg" src="~/img/Instadev_login.png">
+        <img class="Instaimg" src="~/img/Instadev_login.png">
 
-            <form class="formulario" method="POST" action='@Url.Action("Cadastrar_Usuario")'>
-                <div class="escrever">
-                    
-                    <input class="login_in" name="Email" type="email" placeholder="   Email">
-                    <input class="login_in" name="Nome" type="text" placeholder="   Nome completo">
-                    <input class="login_in" name="NomeUsuario" type="text" placeholder="   Nome do usuario">
-                    <input class="login_in" name="Senha" type="password" placeholder="   Senha">
+        <form class="formulario" method="POST" action='@Url.Action("Cadastrar_Usuario")'>
+            <div class="escrever">
 
-                </div>
-                
-                <button class="botao" type="submit">Cadastre-se</button>
+                <input class="login_in" name="Email" type="email" placeholder="   Email">
+                <input class="login_in" name="Nome" type="text" placeholder="   Nome completo">
+                <input class="login_in" name="NomeUsuario" type="text" placeholder="   Nome do usuario">
+                <input class="login_in" name="Senha" type="password" placeholder="   Senha">
 
-            </form>
-            <span class="nome_spam">Ao se cadastrar, você concorda com nossos Termos, Política de Dados e Política de
-                Cookies</span>
-
-        </section>
-
-        <section class="cadastrar">
-            <div class="cadastro_conta">
-                <p>Tem uma conta?</p>
-                <a asp-area="" asp-controller="Home" asp-action="Index">&nbsp;Conecte-se</a>
             </div>
-        </section>
 
-        <section class="instalar">
-            <p>Obtenha o aplicativo</p>
-            <div class="img_instalar">
-                <img src="~/img/app_store.png" alt="">&nbsp;<img src="~/img/google_play.png" alt="">
-            </div>
-        </section>
+            <button class="botao" type="submit">Cadastre-se</button>
+
+        </form>
+        <span class="nome_spam">Ao se cadastrar, você concorda com nossos Termos, Política de Dados e Política de
+            Cookies</span>
+
+    </section>
+
+    <section class="cadastrar">
+        <div class="cadastro_conta">
+            <p>Tem uma conta?</p>
+            <a asp-area="" asp-controller="Home" asp-action="Index">&nbsp;Conecte-se</a>
+        </div>
+    </section>
+
+    <section class="instalar">
+        <p>Obtenha o aplicativo</p>
+        <div class="img_instalar">
+            <img src="~/img/app_store.png" alt="">&nbsp;<img src="~/img/google_play.png" alt="">
+        </div>
+    </section>
+</div>

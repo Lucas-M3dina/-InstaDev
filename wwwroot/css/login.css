@@ -49,16 +49,10 @@ body{
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-}
-
-form{
-
     background-color: rgb(255, 255, 255);
     width: 342px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-
 }
 
 
