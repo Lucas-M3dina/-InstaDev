@@ -106,14 +106,17 @@ header .container_header .container_nav nav .lista_logos .usuario_foto{
 
 /* INICIO FEED */
 
+main{
+    background-color: #FAFAFA;
+}
+
 .feed_main{
-    background-color: #E5E5E5;
+    background-color: #FAFAFA;
 }
 
 .container_feed{
     margin: 0 auto;
-    width: 58%;
-    min-width: 475px;
+    width: 475px;
 }
 
 .posicionando_aside{
@@ -205,6 +208,7 @@ header .container_header .container_nav nav .lista_logos .usuario_foto{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1em;
+    flex-direction: row;
 }
 
 #escolha_imagem{
@@ -277,6 +281,7 @@ header .container_header .container_nav nav .lista_logos .usuario_foto{
 .user_post{
     max-width: 31px;
     border-radius: 300px;
+    max-height: 33px;
 }
 
 .header_post_textos{
@@ -407,3 +412,22 @@ header .container_header .container_nav nav .lista_logos .usuario_foto{
 
 
 /* FIM DO FEED */
+
+
+/* FOOTER */
+
+footer{
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    
+}
+
+footer span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #FAFAFA;
+    margin-top: 1em;
+}
