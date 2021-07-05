@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\luiza\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\GIT\\InstaDev\\InstaDev.csproj",
+      "projectUniqueName": "C:\\Users\\luiza\\Desktop\\InstaDev\\InstaDev\\InstaDev.csproj",
       "projectName": "InstaDev",
-      "projectPath": "C:\\Users\\User\\Desktop\\GIT\\InstaDev\\InstaDev.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\GIT\\InstaDev\\obj\\",
+      "projectPath": "C:\\Users\\luiza\\Desktop\\InstaDev\\InstaDev\\InstaDev.csproj",
+      "packagesPath": "C:\\Users\\luiza\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\luiza\\Desktop\\InstaDev\\InstaDev\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\luiza\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
