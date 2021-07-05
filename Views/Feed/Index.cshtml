@@ -48,7 +48,7 @@
             <section class="feed_postar">
                 <div class="container_postar">
                     <div class="titulo_post">
-                        <img src="~/img/usuario_exemplo.png" alt="Usuario">
+                        <img src="~/img/user_padrao.jpg" alt="Usuario">
                         <p>Postar</p>
                     </div>
                     <form class="postar_foto" method="POST" action='@Url.Action("Postar")' enctype="multipart/form-data">
@@ -64,7 +64,7 @@
             {
                 <section class="post">
                     <div class="header_post">
-                        <img class="user_post" src="~/img/gabigordo.png" alt="Usuario">
+                        <img class="user_post" src="~/img/user_padrao.jpg" alt="Usuario">
                         <div class="header_post_textos">
                             <p class="nome_usuario">@item.NomeUsuario</p>
                             <p class="localizacao_usuario">Flamengo, RJ</p>
@@ -96,10 +96,10 @@
 
     <aside class="aside_feed">
         <div class="container_aside">
-            <img class="imagem_usuario_aside" src="~/img/thank-you.png" alt="Usuario">
+            <img class="imagem_usuario_aside" src="~/img/user_padrao.jpg" alt="Usuario">
             <div class="textos_aside">
-                <p class="usuario_aside">yes_baby</p>
-                <p class="nome_usuario_aside">Marcos Jeeves</p>
+                <p class="usuario_aside">@ViewBag.UserName</p>
+                <p class="nome_usuario_aside">@ViewBag.Name</p>
             </div>
         </div>
     </aside>

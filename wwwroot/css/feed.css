@@ -151,8 +151,9 @@ main{
 }
 
 .imagem_story{
-    max-width: 2.9em;
+    width: 56px;
     border-radius: 300px;
+    height: 57px;
 }
 
 .nome_usuario_story{
