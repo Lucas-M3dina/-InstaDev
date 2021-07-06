@@ -7,40 +7,37 @@
         <div class="container_feed">
             <section class="perfis">
                 <div class="container_perfis">
-                    <div class="container_perfis_colunas">
-                        <img class="imagem_story" src="~/img/vin-diesel.png" alt="usuario">
-                        <p class="nome_usuario_story">Vin Diesel</p>
-                    </div>
 
-                    <div class="container_perfis_colunas">
-                        <img class="imagem_story" src="~/img/gabigordo.png" alt="usuario">
-                        <p class="nome_usuario_story">Gabigordo</p>
-                    </div>
+                    @* @for (var i = 0; i < 7; i++)
+                    {
+                        if (ViewBag.usuarios[i] != null)
+                        {
+                            var item = ViewBag.usuarios[i];
+                            <div class="container_perfis_colunas">
+                                <img class="imagem_story" src="~/img/@item.FotoPerfil" alt="usuario">
+                                <p class="nome_usuario_story">@item.NomeUsuario</p>
+                            </div> 
+                        }
+                    } *@
+                    @{
+                        int cont = 0;
+                    }
+                    @foreach (var item in ViewBag.usuarios)
+                    {
+                        if (cont < 7)
+                        {
+                            <div class="container_perfis_colunas">
+                                <img class="imagem_story" src="~/img/@item.FotoPerfil" alt="usuario">
+                                <p class="nome_usuario_story">@item.NomeUsuario</p>
+                            </div>     
+                        }else
+                        {
+                            break;
+                        }
+                        cont++;
+                    }
 
-                    <div class="container_perfis_colunas">
-                        <img class="imagem_story" src="~/img/will-baiano.png" alt="usuario">
-                        <p class="nome_usuario_story">Will-baiano</p>
-                    </div>
-
-                    <div class="container_perfis_colunas">
-                        <img class="imagem_story" src="~/img/tony_stark.png" alt="usuario">
-                        <p class="nome_usuario_story">Tony_stark</p>
-                    </div>
-
-                    <div class="container_perfis_colunas">
-                        <img class="imagem_story" src="~/img/pele.png" alt="usuario">
-                        <p class="nome_usuario_story">King_pele</p>
-                    </div>
-
-                    <div class="container_perfis_colunas">
-                        <img class="imagem_story" src="~/img/samuel-rosa-bebe.png" alt="usuario">
-                        <p class="nome_usuario_story">Samuel_Rosa</p>
-                    </div>
-
-                    <div class="container_perfis_colunas">
-                        <img class="imagem_story" src="~/img/chaves_metal.png" alt="usuario">
-                        <p class="nome_usuario_story">chaves_metal</p>
-                    </div>
+                    
 
                 </div>
             </section>

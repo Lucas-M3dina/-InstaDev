@@ -10,6 +10,7 @@ namespace InstaDev.Controllers
     public class FeedController : Controller
     {
         Post PostModel = new Post();
+        Usuario u = new Usuario();
         Random IdAleatorio = new Random();
         bool repetir;
 
@@ -18,6 +19,7 @@ namespace InstaDev.Controllers
             ViewBag.Name = HttpContext.Session.GetString("_Nome");
             ViewBag.ImagemUsuario = HttpContext.Session.GetString("_FotoUsuario");
             ViewBag.Posts = PostModel.LerTodas();
+            ViewBag.usuarios = u.LerTodos();
             return View();
         }
 
