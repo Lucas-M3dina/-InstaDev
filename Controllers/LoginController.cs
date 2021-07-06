@@ -27,6 +27,7 @@ namespace InstaDev.Controllers
                 HttpContext.Session.SetString("_UserName", logado.Split(";")[4]);
                 HttpContext.Session.SetString("_IdUser", logado.Split(";")[0]);
                 HttpContext.Session.SetString("_Nome", logado.Split(";")[3]);
+                HttpContext.Session.SetString("_FotoUsuario", logado.Split(";")[5]);
                 return LocalRedirect("~/Feed");
             }
             
@@ -39,6 +40,7 @@ namespace InstaDev.Controllers
             HttpContext.Session.Remove("_UserName");
             HttpContext.Session.Remove("_IdUser");
             HttpContext.Session.Remove("_Nome");
+            HttpContext.Session.Remove("_FotoUsuario");
             return LocalRedirect("~/");
         }
     }

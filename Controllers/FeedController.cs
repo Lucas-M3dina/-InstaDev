@@ -16,6 +16,7 @@ namespace InstaDev.Controllers
         public IActionResult Index(){
             ViewBag.UserName = HttpContext.Session.GetString("_UserName");
             ViewBag.Name = HttpContext.Session.GetString("_Nome");
+            ViewBag.ImagemUsuario = HttpContext.Session.GetString("_FotoUsuario");
             ViewBag.Posts = PostModel.LerTodas();
             return View();
         }
@@ -31,6 +32,7 @@ namespace InstaDev.Controllers
             } while(repetir == true);
 
             novoPost.NomeUsuario = HttpContext.Session.GetString("_UserName");
+            novoPost.ImagemUsuario = HttpContext.Session.GetString("_FotoUsuario");
             novoPost.IdImagem = IdAleatorio.Next();
             novoPost.Descricao = form["Descricao"];
             //novaEquipe.Imagem = form["Imagem"];

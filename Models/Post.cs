@@ -10,6 +10,9 @@ namespace InstaDev.Models
 
         public string Descricao { get; set; }
         public string NomeUsuario { get; set; }
+        public string ImagemUsuario { get; set; }
+        
+        
         
         
         public string Imagem { get; set; }
@@ -25,7 +28,7 @@ namespace InstaDev.Models
         }
 
         private string Preparar(Post e){
-            return $"{e.NomeUsuario};{e.IdImagem};{e.Descricao};{e.Imagem}";
+            return $"{e.NomeUsuario};{e.IdImagem};{e.Descricao};{e.Imagem};{e.ImagemUsuario}";
         }
 
         public void Criar(Post e)
@@ -55,6 +58,8 @@ namespace InstaDev.Models
                 postagem.IdImagem = Int32.Parse(linha[1]);
                 postagem.Descricao = linha[2];
                 postagem.Imagem = linha[3];
+                postagem.ImagemUsuario = linha[4];
+                
 
                 postagens.Add(postagem);
             }

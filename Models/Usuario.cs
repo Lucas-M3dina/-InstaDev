@@ -11,6 +11,7 @@ namespace InstaDev.Models
         public string Senha { get; set; }
         public string Nome { get; set; }
         public string NomeUsuario { get; set; }
+        public string FotoPerfil { get; set; } = "user_padrao.jpg";
         public bool repetir;
         
         
@@ -22,7 +23,7 @@ namespace InstaDev.Models
         }
 
         private string PrepararLinha(Usuario user){
-            return $"{user.IdUsuario};{user.Email};{user.Senha};{user.Nome};{user.NomeUsuario}";
+            return $"{user.IdUsuario};{user.Email};{user.Senha};{user.Nome};{user.NomeUsuario};{user.FotoPerfil}";
         }
 
         public void Criar(Usuario user)
@@ -47,6 +48,7 @@ namespace InstaDev.Models
                 usuario.Senha = linha[2];
                 usuario.Nome = linha[3];
                 usuario.NomeUsuario = linha[4];
+                usuario.FotoPerfil = linha[5];
 
                 usuarios.Add(usuario);
             }
