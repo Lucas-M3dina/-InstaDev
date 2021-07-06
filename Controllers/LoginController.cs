@@ -13,7 +13,6 @@ namespace InstaDev.Controllers
         Usuario UsuarioModel = new Usuario();
 
         public IActionResult Index(){
-
             return View();
         }
 

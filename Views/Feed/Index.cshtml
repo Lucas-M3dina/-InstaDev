@@ -1,3 +1,4 @@
+@using Microsoft.AspNetCore.Http
 @{
     ViewData["Title"] = "Feed";
 }
@@ -24,17 +25,20 @@
                     }
                     @foreach (var item in ViewBag.usuarios)
                     {
-                        if (cont < 7)
+                        if (cont < 7 && item.NomeUsuario != ViewBag.UserName)
                         {
                             <div class="container_perfis_colunas">
                                 <img class="imagem_story" src="~/img/@item.FotoPerfil" alt="usuario">
                                 <p class="nome_usuario_story">@item.NomeUsuario</p>
                             </div>     
-                        }else
+                            cont++;
+                        }else if (cont >= 7)
                         {
                             break;
                         }
-                        cont++;
+                        else
+                        {
+                        }
                     }
 
                     

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dev\\Desktop\\Instadev\\InstaDev.csproj",
+      "projectUniqueName": "C:\\Users\\dev\\Desktop\\Medina\\InstaDev\\InstaDev.csproj",
       "projectName": "InstaDev",
-      "projectPath": "C:\\Users\\dev\\Desktop\\Instadev\\InstaDev.csproj",
+      "projectPath": "C:\\Users\\dev\\Desktop\\Medina\\InstaDev\\InstaDev.csproj",
       "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dev\\Desktop\\Instadev\\obj\\",
+      "outputPath": "C:\\Users\\dev\\Desktop\\Medina\\InstaDev\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
