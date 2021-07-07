@@ -1,3 +1,5 @@
+
+using System.Collections.Generic;
 using InstaDev.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -13,37 +15,48 @@ namespace InstaDev.Controllers
         bool repetir;
 
 
-        [Route("Index")]
+        [Route("Listar")]
         public IActionResult Index(){
-            
-            // ViewBag.UsuarioModel = Usuario.LerTodas();
+            ViewBag.UserName = HttpContext.Session.GetString("_UserName");
+            ViewBag.Name = HttpContext.Session.GetString("_Nome");
+            // ViewBag.UsuarioModel = Usuario.LerTodos();
             ViewBag.Usuario = UsuarioModel.LerTodos();
             return View();
         }
 
 
        [Route("Modificar")]
-    
         public IActionResult Modificar(IFormCollection form){
-            
+            int idUser = int.Parse(HttpContext.Session.GetString("_IdUser"));
             Usuario NovoUsuario = new Usuario();
+            Usuario AntigoUsuario = new Usuario();
+            string nick = HttpContext.Session.GetString("_UserName");
 
-            NovoUsuario.Nome = form[""];
-            NovoUsuario.NomeUsuario = form[""];
-            NovoUsuario.Email = form[""];
+            List<Usuario> usuarios = new List<Usuario>();
+            usuarios = Usuario.LerTodos();
+            AntigoUsuario = usuarios.Find(x => x.NomeUsuario == nick);
+            
+            NovoUsuario.Senha = AntigoUsuario.Senha;
+            NovoUsuario.IdUsuario = AntigoUsuario.IdUsuario;
+            NovoUsuario.Nome = form["Nome"];
+            NovoUsuario.NomeUsuario = form["Username"];
+            NovoUsuario.Email = form["Email"];
 
+            UsuarioModel.Deletar(idUser);
             UsuarioModel.Criar(NovoUsuario);
             ViewBag.Usuario = UsuarioModel.LerTodos();
 
             return LocalRedirect("~/Feed");
         }
-        // [Route("Deletar/{id}")]
-        // public IActionResult Deletar(int id)
-        // {
-        //     UsuarioModel.Deletar(id);
-        //     ViewBag.Usuario = UsuarioModel.LerTodos();
-        //     return LocalRedirect("~/Login");
-        // }
+        
+        [Route("Excluir")]
+        public IActionResult Deletar()
+        {
+            int IdDel = int.Parse(HttpContext.Session.GetString("_IdUser"));
+            UsuarioModel.Deletar(IdDel);
+            ViewBag.Usuario = UsuarioModel.LerTodos();
+            return LocalRedirect("~/");
+        }
 
         
     }

@@ -26,6 +26,7 @@ namespace InstaDev.Controllers
             {
                 HttpContext.Session.SetString("_UserName", logado.Split(";")[4]);
                 HttpContext.Session.SetString("_IdUser", logado.Split(";")[0]);
+                HttpContext.Session.SetString("_Email", logado.Split(";")[1]);
                 return LocalRedirect("~/Feed");
             }
             
