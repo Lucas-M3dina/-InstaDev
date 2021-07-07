@@ -1,0 +1,107 @@
+@using Microsoft.AspNetCore.Http
+@{
+    ViewData["Title"] = "Feed";
+}
+
+<div class="posicionando_aside">
+    <div class="feed_main">
+        <div class="container_feed">
+            <section class="perfis">
+                <div class="container_perfis">
+
+                    @* @for (var i = 0; i < 7; i++)
+                    {
+                        if (ViewBag.usuarios[i] != null)
+                        {
+                            var item = ViewBag.usuarios[i];
+                            <div class="container_perfis_colunas">
+                                <img class="imagem_story" src="~/img/@item.FotoPerfil" alt="usuario">
+                                <p class="nome_usuario_story">@item.NomeUsuario</p>
+                            </div> 
+                        }
+                    } *@
+                    @{
+                        int cont = 0;
+                    }
+                    @foreach (var item in ViewBag.usuarios)
+                    {
+                        if (cont < 7 && item.NomeUsuario != ViewBag.UserName)
+                        {
+                            <div class="container_perfis_colunas">
+                                <img class="imagem_story" src="~/img/@item.FotoPerfil" alt="usuario">
+                                <p class="nome_usuario_story">@item.NomeUsuario</p>
+                            </div>     
+                            cont++;
+                        }else if (cont >= 7)
+                        {
+                            break;
+                        }
+                        else
+                        {
+                        }
+                    }
+
+                    
+
+                </div>
+            </section>
+
+            <section class="feed_postar">
+                <div class="container_postar">
+                    <div class="titulo_post">
+                        <img src="~/img/@ViewBag.ImagemUsuario" alt="Usuario">
+                        <p>Postar</p>
+                    </div>
+                    <form class="postar_foto" method="POST" action='@Url.Action("Postar")' enctype="multipart/form-data">
+                        <input class="descricao_post" type="text" name="Descricao" placeholder="Digite a descrição da imagem...">
+                        <label class="upload_imagem" for='escolha_imagem'>Escolha a imagem</label>
+                        <input id="escolha_imagem" type="file" name="Imagem">
+                        <button class="feed_btn_postar" type="submit">Postar</button>
+                    </form>
+                </div>
+            </section>
+
+            @foreach (var item in ViewBag.Posts)
+            {
+                <section class="post">
+                    <div class="header_post">
+                        <img class="user_post" src="~/img/@item.ImagemUsuario" alt="Usuario">
+                        <div class="header_post_textos">
+                            <p class="nome_usuario">@item.NomeUsuario</p>
+                            <p class="localizacao_usuario">Flamengo, RJ</p>
+                        </div>
+                    </div>
+                    <img class="imagem_post" src="~/img/Posts/@item.Imagem" alt="Post">
+
+                    <div class="comentario">
+                        <div class="interacao_post">
+                            <i class="far fa-heart logos_comentario"></i>
+                            <i class="far fa-comment logos_comentario"></i>
+                            <form>
+                                <input class="input_comentar" type="text" name="" placeholder="Comentar...">
+                            </form>
+                        </div>
+
+                        <span class="curtidas">2700 curtidas</span>
+                        <p class="mensagem_comentario"> <span class="usuario_comentario">@item.NomeUsuario</span> @item.Descricao </p>
+                        <p class="mensagem_comentario"> <span class="usuario_comentario">yes_baby</span> thank you</p>
+                        <p class="mensagem_comentario"> <span class="usuario_comentario">king_pele</span> Esses são bons de
+                            bola, entende? </p>
+                    </div>
+                </section>
+            }
+
+        </div>
+
+    </div>
+
+    <aside class="aside_feed">
+        <div class="container_aside">
+            <img class="imagem_usuario_aside" src="~/img/@ViewBag.ImagemUsuario" alt="Usuario">
+            <div class="textos_aside">
+                <p class="usuario_aside">@ViewBag.UserName</p>
+                <p class="nome_usuario_aside">@ViewBag.Name</p>
+            </div>
+        </div>
+    </aside>
+</div>

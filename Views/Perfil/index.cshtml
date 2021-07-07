@@ -1,0 +1,77 @@
+@{
+    ViewData["Title"] = "Perfil";
+}
+
+<div class="container_main_perfil">
+    <section class="container_section1">
+        <img class="foto_perfil" src="~/img/@ViewBag.ImagemUsuario" alt="">
+        <div class="edicao_perfil">
+            <h1 class="nome_perfil">@ViewBag.UserName</h1>
+            <div class="valores">
+                <p>@ViewBag.cont publicações</p>
+                <p>128 seguindo</p>
+                <p>214 seguidores</p>
+            </div>
+            <div class="valores2">
+                <h2 class="nome">@ViewBag.Name</h2>
+                <a class="editar" asp-area="" asp-controller="EditPerfil" asp-action="Listar">Editar Perfil</a>
+                <a class="sair" asp-area="" asp-controller="Login" asp-action="Logout">Sair</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="publicacao">
+            <img class="quadrados" src="~/img/image 1.png" alt="">
+            <h2 class="publicações">publicações</h2>
+        </div>
+    </section>
+
+    @foreach (var item in ViewBag.Posts )
+    {
+        @if (item.NomeUsuario == ViewBag.UserName)
+        {
+            <section class="container_section2">
+                <img class="foto_publicação" src="~/img/Posts/@item.Imagem" alt="">
+                <div class="container_publicacao">
+                    <div class="publicacao2">
+                        <div class="foto_perfil3">
+                            <img class="foto_perfil2" src="~/img/@item.ImagemUsuario" alt="">
+                            <div class="identificacao">
+                                <h2 class="nome2">@item.NomeUsuario</h2>
+                                <p class="localização">Rio de Janeiro, Brazil</p>
+                            </div>
+                        </div>
+                        <div class="comentarios">
+                            <div class="curtidas">
+                                <img class="curtir" src="~/img/coracao.png" alt="">
+                                <img class="comentario" src="~/img/Vector2.png" alt="">
+                            </div>
+                            <h2 class="total_curtidas">1954 curtidas</h2>
+                        </div>
+                        <div class="respostas">
+                            <div class="container_comenta">
+                                <p class="yesbaby_comenta">
+                                    <span class="fausto">fausto_silva</span>    Esse cara é fera bixo!!!
+                                </p>
+                                <img class="curtir_comenta" src="~/img/Vector 3.png" alt="">
+                            </div>
+                            <div class="container_comenta">
+                                <p class="yesbaby_comenta"><span class="fausto">yes_baby</span>    thank you</p>
+                                <img class="curtir_comenta" src="~/img/Vector 3.png" alt="">
+                            </div>
+                            <div class="container_comenta">
+                                <p class="yesbaby_comenta"><span class="fausto">adriano_stark</span>    Quando eu adormecer, vou sonhar com você. É sempre você.</p>
+                                <img class="curtir_comenta" src="~/img/Vector 3.png" alt="">
+                            </div>
+                            <div class="container_comenta">
+                                <p class="yesbaby_comenta"><span class="fausto">yes_baby</span>    Yes baby!!</p>
+                                <img class="curtir_comenta" src="~/img/Vector 3.png" alt="">
+                            </div>
+                        </div>
+                        <span class="ver_comenta">Ver todos os 585 comentários</span>
+                    </div>
+                </div>
+            </section>   
+        }
+    }
+</div>

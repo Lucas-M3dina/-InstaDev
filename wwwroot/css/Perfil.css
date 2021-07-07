@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.container_main_perfil{
+        width: 58%;
+        margin: 0 auto;
+    }
+
+.container_section1{
+    align-items: center;
+    display: flex;
+    padding: 1em 0;
+    border-bottom: 1px solid #DCDCDC;
+}    
+
+.edicao_perfil{
+    display: flex;
+    flex-direction: column;
+    height: 112px;
+    width: 70%;
+    justify-content: space-between;
+    margin-left: 4em;
+}
+
+
+
+
+.foto_perfil{
+    Width :130px;
+    Height :130px;
+    border-radius: 115.5px;
+}
+
+
+.nome_perfil{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    
+}
+
+.valores{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.valores2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.nome{
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    
+}
+
+.editar{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #2686CC;
+    
+}
+
+
+
+.sair{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #2686CC;
+    
+}
+.publicacao{
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.quadrados{
+    width: 17px;
+    height: 15px;
+}
+
+.publicações{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: normal;
+    
+    
+}
+
+
+.container_section2{
+    display: flex;
+    background-color: #FFFFFF;
+    width: 100%;
+    margin-top: 2em;
+    
+}
+
+
+.foto_publicação{
+    width: 430px;
+    height: 404px;
+}
+
+.container_publicacao{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.publicacao2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.foto_perfil2{
+    width: 43px;
+    height: 44px;
+    border-radius: 115.5px;
+}
+
+.foto_perfil3{
+    display: flex;
+    align-items: center;
+}
+
+.identificacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40px;
+    margin-left: 1em;
+}
+
+.nome2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    
+}
+
+.localização{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    
+}
+
+.comentarios{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 43px;
+    margin-top: 1em;
+}
+
+.curtidas{
+    display: flex;
+    justify-content: space-between;
+    width: 65px;
+    align-items: center;
+}
+
+.curtir{
+    Width :23.33px;
+    Height :20.42px;
+}
+
+.comentario1{
+ width: 24px ;   
+ height: 21.13px;
+}
+
+.total_curtidas{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    
+}
+
+.respostas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+
+.container_comenta{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.fausto{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 13px;  
+}
+
+
+.curtir_comenta{
+    Width: 15px;
+    Height: 13.12px;
+}
+
+.yesbaby_comenta{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    margin: 5px 0;  
+}
+
+
+.ver_comenta{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: #909090;
+    
+}

@@ -1,0 +1,69 @@
+@{
+
+    ViewData["Title"] = "Editar_Perfil";
+}
+
+
+<section class="principal">
+    <div class="edicao">
+        <div class="titulo">
+            <h1 class="editar">Editar Perfil</h1>
+        </div>
+        <div class="informacao">
+            <form action='@Url.Action("Modificar")' method="POST" enctype="multipart/form-data">
+                <div class="info_usuario">
+                    <img class="img_usuario" src="~/img/@ViewBag.ImagemUsuario" alt="Foto do Perfil">
+                    <div class="info">
+                        <p>@ViewBag.UserName</p>
+                        <div class="alterar">
+                            <label for="arquivo">Alterar foto do perfil</label>
+                            <input style="display:none;" type="file" name="arquivo" id="arquivo">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="nome2">
+                    <div class="text_input">
+                        <label for="text_perfil">Nome</label>
+                    </div>
+                    <div class="paragrafo">
+                        <input id="text_perfil" type="text" name="Nome"></input>
+                        <p>Ajude as pessoas a descobrir sua conta usando o nome pelo qual você é conhecido: seu
+                            nome
+                            completo, apelido ou nome comercial.</p>
+                        <p>Você pode alterar o seu nome apenas duas vezes a cada 14 dias.</p>
+                    </div>
+                </div>
+                <div class="usuario">
+                    <div class="text_input_user">
+                        <label for="text_perfil">Nome de usuário</label>
+                    </div>
+                    <div class="paragrafo">
+                        <input id="text_user_name" type="text" name="Username"></input>
+                        <p id="txt_username">Na maioria dos casos, você poderá alterar seu nome de usuário
+                            novamente
+                            para nascimento_tr por mais 14 dias.</p>
+                        <p class="user_p">Informações pessoais<br /> Forneça suas informações pessoais, mesmo se
+                            a conta for usada
+                            para
+                            uma empresa, um animal de estimação ou outra coisa. Elas não farão parte do seu
+                            perfil
+                            público.</p>
+                    </div>
+                </div>
+                <div class="text_input_email">
+                    <div class="label_email">
+                        <label for="text_perfil_email">Email</label>
+                    </div>
+                    <input id="text_perfil_email" type="text" name="Email"></input>
+                </div>
+                <div class="enviar">
+                    <button class="botao_perfil" type="submit">Enviar</button>
+            </form>
+            <a class="desativar" asp-area="" asp-controller="EditPerfil" asp-action="Excluir">Desativar minha conta
+                definitivamente</a>
+        </div>
+    </div>
+    </div>
+
+</section>
