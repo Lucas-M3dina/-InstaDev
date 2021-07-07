@@ -67,7 +67,7 @@ namespace InstaDev.Controllers
             }
             
             
-            NovoUsuario.FotoPerfil = AntigoUsuario.FotoPerfil;
+        
             NovoUsuario.Senha = AntigoUsuario.Senha;
             NovoUsuario.IdUsuario = AntigoUsuario.IdUsuario;
             NovoUsuario.Nome = form["Nome"];

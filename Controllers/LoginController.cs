@@ -9,10 +9,11 @@ namespace InstaDev.Controllers
     public class LoginController: Controller
     {
         [TempData]
-        public string Mensagem { get; set; }
+        public string Mensagem { get; set; } = "";
         Usuario UsuarioModel = new Usuario();
 
         public IActionResult Index(){
+            ViewBag.mensagem = Mensagem;
             return View();
         }
 
@@ -31,6 +32,7 @@ namespace InstaDev.Controllers
             }
             
             Mensagem = "Dados incorretos, tente novamente...";
+            ViewBag.mensagem = Mensagem;
             return LocalRedirect("~/");
         }
 

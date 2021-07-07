@@ -9,7 +9,7 @@
         <img class="Instaimg" src="~/img/Instadev_login.png" alt="Logo">
 
         <form class="formulario" method="POST" action='@Url.Action("Logar")'>
-            <span class="erro">@TempData.Peek("Mensagem")</span>
+            <span class="erro">@ViewBag.mensagem</span>
             <div class="escrever">
                 <input class="login_in" name="Email" type="email" placeholder="   Email" required>
             </div>
