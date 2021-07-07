@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - InstaDev</title>
+    <script src="https://kit.fontawesome.com/d9b9f84503.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="~/css/feed.css" />
+    <link rel="stylesheet" href="~/css/edit_perfil.css">
+    <link rel="stylesheet" href="~/css/login.css">
+    <link rel="stylesheet" href="~/css/cadastro.css">
+    <link rel="stylesheet" href="~/css/perfil.css">
+</head>
+
+<body>
+    
+    @if (ViewData["Title"].ToString() != "Cadastrar_Usuario" && ViewData["Title"].ToString() != "Login" )
+    {
+        <header>
+            <div class="container_header">
+                <img class="logo" src="~/img/Instadev.png" alt="Logo">
+                <div class="container_nav">
+                    <form>
+                        <input class="pesquisar" type="text" name="" placeholder="Pesquisar">
+                        <button type="submit"> <i class="fas fa-search"></i> </button>
+                    </form>
+
+                    <nav>
+                        <ul class="lista_logos">
+                            <li> <a> <i class="fas fa-home logos_header"></i> </a> </li> 
+                            <li> <a> <i class="far fa-paper-plane logos_header"></i> </a> </li>
+                            <li> <a> <i class="far fa-compass logos_header"></i> </a> </li> 
+                            <li> <a> <i class="far fa-heart logos_header"></i> </a> </li> 
+                            <li> <a asp-area="" asp-controller="Perfil" asp-action="Index"> <img class="usuario_foto logos_header" src="~/img/@ViewBag.ImagemUsuario" alt="Foto do Usuario"> </a> </li> 
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    }
+
+
+    <main>
+        @RenderBody()
+    </main>
+
+
+    @if (ViewData["Title"].ToString() != "Cadastrar_Usuario" && ViewData["Title"].ToString() != "Login" )
+    {
+        <footer>
+            <span>Copyright ₢ 2021 - Escola Senai de informática</span>
+        </footer>
+    }
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
