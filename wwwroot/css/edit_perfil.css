@@ -1,0 +1,433 @@
+/* RESET CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: 0;
+
+}
+
+/* FIM DO RESET CSS */
+
+
+/* INICIO DO HEADER */
+
+header{
+    display: flex;
+    background-color: #fff;
+    border: #F1F1F1 solid 1px;
+    align-items: center;
+    width: 100%;
+}
+
+header .container_header{
+    display: flex;
+    width: 58%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2em 0;
+}
+
+header .container_header .logo{
+    padding: 0.6em 0;
+    max-width: 70px;
+}
+
+header .container_header .container_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    min-width: 354px;
+}
+
+header .container_header .container_nav form{
+    display: flex;
+}
+
+header .container_header .container_nav .pesquisar{
+    background: #FAFAFA;
+    border-top: #DCDCDC 1px solid;
+    border-left: #DCDCDC 1px solid;
+    border-bottom: #DCDCDC 1px solid;
+    border-radius: 2px 0 0 2px;
+    text-align: center;
+    font-family: "Segoe UI";
+    padding: 0.1em;
+    width: 112%;
+    font-size: 13px;
+    color: #AFAFAF;
+}
+
+header .container_header .container_nav form button {
+    background: #FAFAFA;
+    border-top: #DCDCDC 1px solid;
+    border-right: #DCDCDC 1px solid;
+    border-bottom: #DCDCDC 1px solid;
+    border-radius: 0 2px 2px 0;
+    padding: 2.5px;
+}
+
+header .container_header .container_nav form button i{
+    color: #AFAFAF;
+    font-size: 12.5px;
+}
+
+header .container_header .container_nav nav{
+    display: flex;
+    width: 48%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container_header .container_nav nav .lista_logos{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container_header .container_nav nav .lista_logos .logos_header{
+    font-size: 18px;
+}
+
+header .container_header .container_nav nav .lista_logos .usuario_foto{
+    border-radius: 50px;
+    max-width: 32px;
+    max-height: 32px;
+}
+
+/* FIM DO HEADER */
+
+
+
+/* INICIO FEED */
+
+.feed_main{
+    background-color: #E5E5E5;
+}
+
+.container_feed{
+    margin: 0 auto;
+    width: 58%;
+    min-width: 475px;
+}
+
+/* SECTION PERFIS */
+
+.perfis{
+    background-color: #fff;
+    width: 64%;
+    display: flex;   
+    margin-top: 1em;
+    border: #F1F1F1 solid 1px;
+    min-width: 475px;
+}
+
+.container_perfis{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.6em;
+}
+
+.container_perfis_colunas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagem_story{
+    max-width: 2.9em;
+    border-radius: 300px;
+}
+
+.nome_usuario_story{
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+}
+
+/* FIM DA SECTION PERFIS */
+
+
+/* INICIO DA SECTION PARA POST */
+
+.principal{
+    background-color: white;
+    width: 938px;
+    margin: 0 auto;
+    padding: 0 2em 2em 0;
+    margin-top: 2em;
+    /* height: 78vh; */
+}
+
+.edicao{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.titulo{
+    border-left: 2px solid #000000;
+    height: 70px;
+    padding-left: 20px;
+}
+.titulo h1{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+    width: 103px;
+    padding-top: 29px;
+}
+.informacao{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 84%;
+}
+
+
+.info_usuario{
+    display: flex;
+    padding-left: 4%;
+    margin-top: 25px;
+    /* width: 35%; */
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.img_usuario{
+    border-radius: 100px;
+    width: 50px;
+    /* height: 40px; */
+    margin-right: 20px;
+}
+
+.info p{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    
+    color: #000000;
+}
+.alterar label{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #2686CC;
+    cursor: pointer;
+}
+
+.text_input{
+    display: flex;
+    /* padding-left: 4%; */
+    width: 200px;
+    justify-content: space-between;
+}
+
+.text_input label{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+    text-align: right;
+    width: 170px;
+    margin-right: 25px;
+}
+#text_perfil{
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 380px;
+    padding: 2px;
+    
+}
+.nome{
+    display: flex;
+    margin-bottom: 35px;
+}
+.nome p{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    width: 380px;
+    margin-top: 6px;
+
+    color: #909090;
+}
+.paragrafo{
+    width: 84%;
+    /* padding-left: 15%; */
+    text-align: justify;
+    
+}
+
+.text_input_user{
+    display: flex;
+    /* padding-left: 4%; */
+    width: 200px;
+    justify-content: space-between;
+    
+}
+.text_input_user label{
+    
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+    text-align: right;
+    width: 170px;
+    margin-right: 25px;
+
+}
+.text_user_name label{
+    
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        color: #000000;
+    
+}
+#text_user_name{
+        background: #FFFFFF;
+        border: 1px solid #DCDCDC;
+        box-sizing: border-box;
+        border-radius: 2px;
+        width: 380px;
+        /* height: 55%; */
+        padding: 2px;
+}
+
+
+#txt_username{
+
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    width: 380px;
+    color: #909090;
+
+}
+.usuario{
+    display: flex;
+}
+.user_p{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    padding-top: 20px;
+    width: 380px;
+    color: #909090;
+    margin-bottom: 7px;
+}
+#text_perfil_email{
+    
+        background: #FFFFFF;
+        border: 1px solid #DCDCDC;
+        box-sizing: border-box;
+        border-radius: 2px;
+        width: 380px;
+        padding: 2px;
+       
+    
+}
+.text_perfil_email label{
+    
+    font-family: (Segoe UI);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+    text-align: right;
+}
+
+.text_input_email{
+    display: flex;
+    /* padding-left: 4%; */
+    /* width: 85%; */
+    /* justify-content: space-between; */
+}
+
+.text_input_email form{
+    display: flex;
+   
+    
+    justify-content: space-between;
+}
+.label_email label{
+    
+    text-align: right;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+    margin-right: 25px;
+}
+.label_email {
+    width: 200px;
+    text-align: right;
+    
+}
+
+.enviar{
+    padding-left: 16%;
+    margin-top: 50px;
+}
+
+.desativar{
+    padding-left: 19%;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
+    color: #2686CC;
+}
+.desativar:hover {
+    text-decoration: underline;
+}
+.botao_perfil {
+    width: 66px;
+height: 30px;
+background: #2686CC;
+border-radius: 2px;
+font-family: Segoe UI;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+.botao_perfil:hover {
+    cursor: pointer;
+}
+
+
+

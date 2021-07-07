@@ -1,48 +1,60 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Senai_InstaDev</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <title>@ViewData["Title"] - InstaDev</title>
+    <script src="https://kit.fontawesome.com/d9b9f84503.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="~/css/feed.css" />
+    <link rel="stylesheet" href="~/css/edit_perfil.css">
+    <link rel="stylesheet" href="~/css/login.css">
+    <link rel="stylesheet" href="~/css/cadastro.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Senai_InstaDev</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+    
+    @if (ViewData["Title"].ToString() != "Cadastrar_Usuario" && ViewData["Title"].ToString() != "Login" )
+    {
+        <header>
+            <div class="container_header">
+                <img class="logo" src="~/img/Instadev.png" alt="Logo">
+                <div class="container_nav">
+                    <form>
+                        <input class="pesquisar" type="text" name="" placeholder="Pesquisar">
+                        <button type="submit"> <i class="fas fa-search"></i> </button>
+                    </form>
+
+                    <nav>
+                        <ul class="lista_logos">
+                            <li> <a> <i class="fas fa-home logos_header"></i> </a> </li> 
+                            <li> <a> <i class="far fa-paper-plane logos_header"></i> </a> </li>
+                            <li> <a> <i class="far fa-compass logos_header"></i> </a> </li> 
+                            <li> <a> <i class="far fa-heart logos_header"></i> </a> </li> 
+                            <li> <a asp-area="" asp-controller="EditPerfil" asp-action="Index" > <img class="usuario_foto logos_header" src="~/img/usuario_exemplo.png" alt="Foto do Usuario"> </a> </li> 
+                            @* asp-area="" asp-controller="EditPerfil" asp-action="Listar" *@
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+        </header>
+    }
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - Senai_InstaDev - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
+
+    <main>
+        @RenderBody()
+    </main>
+
+
+    @if (ViewData["Title"].ToString() != "Cadastrar_Usuario" && ViewData["Title"].ToString() != "Login" )
+    {
+        <footer>
+            <span>Copyright ₢ 2021 - Escola Senai de informática</span>
+        </footer>
+    }
+
+
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

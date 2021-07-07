@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m/ARiqckpR5SY6EG5fkQULNiOk2xdlYQusntwEOLpl2UNrvAoXAQnzQ/6Exu4BA3J01fnx+1cHok/6Xn8VGYQQ==",
+  "dgSpecHash": "g+ezhQmYLyAUx8ZxApm0yZDmc2N52w5JpR6+KEVMHl1sinpVhu9ZD9pkjCwaFcPndy3dsLjM1dpDjZvfokDXkQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\luiza\\Desktop\\InstaDev\\InstaDev\\Senai_InstaDev.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\luiza\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\luiza\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\luiza\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\luiza\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.15\\microsoft.netcore.app.host.win-x64.3.1.15.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\leona\\Desktop\\InstaDev-develop\\InstaDev-develop\\InstaDev.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

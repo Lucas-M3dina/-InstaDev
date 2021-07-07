@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Senai_InstaDev.Models;
+using InstaDev.Models;
 
-namespace Senai_InstaDev.Controllers
+namespace InstaDev.Controllers
 {
     public class HomeController : Controller
     {
@@ -26,12 +26,6 @@ namespace Senai_InstaDev.Controllers
         public IActionResult Privacy()
         {
             return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
