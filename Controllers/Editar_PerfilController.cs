@@ -12,6 +12,7 @@ namespace InstaDev.Controllers
     {
         Usuario Usuario = new Usuario();
         Usuario UsuarioModel = new Usuario();
+        Post DeletePost = new Post();
         // Random IdAleatorio = new Random();
         bool repetir;
 
@@ -79,6 +80,7 @@ namespace InstaDev.Controllers
             HttpContext.Session.SetString("_FotoUsuario", NovoUsuario.FotoPerfil);
 
             UsuarioModel.Deletar(idUser);
+
             UsuarioModel.Criar(NovoUsuario);
             ViewBag.Usuario = UsuarioModel.LerTodos();
 
@@ -89,7 +91,9 @@ namespace InstaDev.Controllers
         public IActionResult Deletar()
         {
             int IdDel = int.Parse(HttpContext.Session.GetString("_IdUser"));
+            string user = HttpContext.Session.GetString("_UserName");
             UsuarioModel.Deletar(IdDel);
+            DeletePost.Deletar(user);
             ViewBag.Usuario = UsuarioModel.LerTodos();
             return LocalRedirect("~/");
         }
