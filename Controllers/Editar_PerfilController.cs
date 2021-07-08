@@ -74,6 +74,10 @@ namespace InstaDev.Controllers
             NovoUsuario.NomeUsuario = form["Username"];
             NovoUsuario.Email = form["Email"];
 
+            HttpContext.Session.SetString("_UserName", form["Username"]);
+            HttpContext.Session.SetString("_Nome", form["Nome"]);
+            HttpContext.Session.SetString("_FotoUsuario", NovoUsuario.FotoPerfil);
+
             UsuarioModel.Deletar(idUser);
             UsuarioModel.Criar(NovoUsuario);
             ViewBag.Usuario = UsuarioModel.LerTodos();

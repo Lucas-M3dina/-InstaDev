@@ -96,8 +96,8 @@ header .container_header .container_nav nav .lista_logos .logos_header{
 
 header .container_header .container_nav nav .lista_logos .usuario_foto{
     border-radius: 50px;
-    max-width: 32px;
-    max-height: 32px;
+    width: 32px;
+    height: 32px;
 }
 
 /* FIM DO HEADER */
@@ -194,6 +194,7 @@ main{
 .titulo_post img{
     border-radius: 100px;
     width: 35px;
+    height: 35px;
 }
 
 .titulo_post p{
@@ -385,7 +386,8 @@ main{
 
 .imagem_usuario_aside{
     border-radius: 100px;
-    max-width: 50px;
+    width: 50px;
+    height: 50px;
 }
 
 .textos_aside{
