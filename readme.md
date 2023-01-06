@@ -60,4 +60,4 @@ Interações:
 - Campo para deletar a conta do usuário
 
 ## Tecnologias envolvidas 💻
-- .NET MVC
+- .NET - MVC
