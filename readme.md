@@ -59,3 +59,5 @@ Interações:
 - Forms com Nome, Foto, Username para alterar os dados do usuário 
 - Campo para deletar a conta do usuário
 
+## Tecnologias envolvidas 💻
+- .NET MVC
